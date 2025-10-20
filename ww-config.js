@@ -5,6 +5,12 @@ export default {
     },
     icon: "phone"
   },
+  options: {
+    autoByDefault: true
+  },
+  inherit: {
+    type: "ww-text"
+  },
   properties: {
     initialValue: {
       label: { en: "Initial Value" },
