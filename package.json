@@ -1,11 +1,11 @@
 {
   "name": "phone-input",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "International phone number input component for WeWeb",
   "main": "src/wwElement.vue",
   "scripts": {
     "serve": "weweb serve",
-    "build": "weweb build -- name=phone-input type=wwobject"
+    "build": "weweb build name=phone-input type=wwobject"
   },
   "devDependencies": {
     "@weweb/cli": "latest"

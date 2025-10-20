@@ -17,7 +17,9 @@ export default {
         type: "string",
         tooltip: "Initial phone number value"
       },
-      propertyHelp: "Set the initial phone number value. Can be bound to a variable."
+      propertyHelp: {
+        tooltip: "Set the initial phone number value. Can be bound to a variable."
+      }
       /* wwEditor:end */
     },
     placeholder: {
@@ -31,7 +33,9 @@ export default {
         type: "string",
         tooltip: "Placeholder text shown when input is empty"
       },
-      propertyHelp: "Placeholder text displayed in the input field"
+      propertyHelp: {
+        tooltip: "Placeholder text displayed in the input field"
+      }
       /* wwEditor:end */
     },
     defaultCountry: {
@@ -60,7 +64,9 @@ export default {
         type: "string",
         tooltip: "ISO country code (e.g., fi, se, no, dk, us, gb)"
       },
-      propertyHelp: "Set the default country for phone number formatting"
+      propertyHelp: {
+        tooltip: "Set the default country for phone number formatting"
+      }
       /* wwEditor:end */
     },
     disabled: {
@@ -74,7 +80,9 @@ export default {
         type: "boolean",
         tooltip: "Enable or disable the input field"
       },
-      propertyHelp: "Disable the input to prevent user interaction"
+      propertyHelp: {
+        tooltip: "Disable the input to prevent user interaction"
+      }
       /* wwEditor:end */
     },
     inputHeight: {
@@ -82,35 +90,80 @@ export default {
       type: "Length",
       section: "style",
       defaultValue: "40px",
-      bindable: true
+      bindable: true,
+      /* wwEditor:start */
+      bindingValidation: {
+        type: "string",
+        tooltip: "CSS length value for input height (e.g., 40px, 3rem)"
+      },
+      propertyHelp: {
+        tooltip: "Set the height of the input field"
+      }
+      /* wwEditor:end */
     },
     fontSize: {
       label: { en: "Font Size" },
       type: "Length",
       section: "style",
       defaultValue: "14px",
-      bindable: true
+      bindable: true,
+      /* wwEditor:start */
+      bindingValidation: {
+        type: "string",
+        tooltip: "CSS length value for font size (e.g., 14px, 1rem)"
+      },
+      propertyHelp: {
+        tooltip: "Set the font size of the input text"
+      }
+      /* wwEditor:end */
     },
     borderColor: {
       label: { en: "Border Color" },
       type: "Color",
       section: "style",
       defaultValue: "#d1d5db",
-      bindable: true
+      bindable: true,
+      /* wwEditor:start */
+      bindingValidation: {
+        type: "string",
+        tooltip: "CSS color value (e.g., #d1d5db, rgb(209, 213, 219))"
+      },
+      propertyHelp: {
+        tooltip: "Set the border color of the input field"
+      }
+      /* wwEditor:end */
     },
     focusBorderColor: {
       label: { en: "Focus Border Color" },
       type: "Color",
       section: "style",
       defaultValue: "#3b82f6",
-      bindable: true
+      bindable: true,
+      /* wwEditor:start */
+      bindingValidation: {
+        type: "string",
+        tooltip: "CSS color value for focused state (e.g., #3b82f6, blue)"
+      },
+      propertyHelp: {
+        tooltip: "Set the border color when input is focused"
+      }
+      /* wwEditor:end */
     },
     borderRadius: {
       label: { en: "Border Radius" },
       type: "Length",
       section: "style",
       defaultValue: "4px",
-      bindable: true
+      bindable: true,
+      /* wwEditor:start */
+      bindingValidation: {
+        type: "string",
+        tooltip: "CSS length value for border radius (e.g., 4px, 0.5rem)"
+      },
+      propertyHelp: {
+        tooltip: "Set the border radius for rounded corners"
+      }
+      /* wwEditor:end */
     }
   },
   triggerEvents: [
