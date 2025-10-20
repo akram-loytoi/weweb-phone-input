@@ -148,7 +148,7 @@ export default {
         if (!document.querySelector('link[href*="intlTelInput.css"]')) {
           const cssLink = document.createElement('link');
           cssLink.rel = 'stylesheet';
-          cssLink.href = 'https://cdn.jsdelivr.net/npm/intl-tel-input@19.6.0/build/css/intlTelInput.css';
+          cssLink.href = 'https://cdn.jsdelivr.net/npm/intl-tel-input@25.11.3/build/css/intlTelInput.css';
           document.head.appendChild(cssLink);
         }
         
@@ -158,7 +158,7 @@ export default {
             nationalMode: false,
             formatOnDisplay: true,
             autoPlaceholder: "polite",
-            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@19.6.0/build/js/utils.js"
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@25.11.3/build/js/utils.js"
           });
           
           // Wait for utils script to load
